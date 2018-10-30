@@ -5,7 +5,6 @@
 .navbar	{
 	overflow: hidden;
 	background-color: #222931;
-	padding: 10px 10px;
 }
 
 .navbar a {
@@ -18,29 +17,27 @@
 
 .dropdown {
 	float: left;
-	font-size: 16px;
+	overflow: hidden;
 }
 
-.dropdownbutton {
+.dropdown .dropdownbutton {
 	font-size: 16px;
 	border: none;
 	outline: none;
 	color: white;
 	padding: 14px 16px;
 	background-color: inherit;
-	margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropdownbutton {
+.navbar a:hover, .dropdown:hover .dropdownbutton, .dropdownbutton:focus {
 	background-color: #ffe718;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: inherit;
+	background-color: #222931;
 	min-width: 160px;
-	z-index: 1;
 }
 .dropdown-content a {
 	float: none;
@@ -52,7 +49,7 @@
 }
 
 .dropdown-content a:hover {
-	display: block;
+	background-color: #ffe718;
 }
 
 .show {
