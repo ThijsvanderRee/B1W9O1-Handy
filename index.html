@@ -2,15 +2,39 @@
 <html>
 <head>
 	<title>DavinciHandy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
 </head>
 <body>
-	<ul>
-		<li>HOME</li>
-		<li>OVER ONS</li>
-		<li>PORTFOLIO</li>
-		<li>NIEUWS</li>
-		<li>CONTACT</li>
-	</ul>
+	<div class="navbar">
+		<a href="#HOME">HOME</a>
+		<div class="dropdown">
+			<button class="dropdownbutton">OVER ONS
+				<i class="arrow-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="#GESCHIEDENIS">GESCHIEDENIS</a>
+				<a href="#DEALS">DEALS</a>
+				<a href="#DIENSTEN">DIENSTEN</a>
+			</div>
+		</div>
+		<a href="#PORTFOLIO">PORFOLIO</a>
+		<a href="#NIEUWS">NIEUWS</a>
+		<a href="#CONTACT">CONTACT</a>
+	</div>
+	<script>
+		function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(e) {
+ 			if (!e.target.matches('.dropdownbutton')) {
+    			var myDropdown = document.getElementById("myDropdown");
+      			if (myDropdown.classList.contains('show')) {
+        			myDropdown.classList.remove('show');
+      			}
+  			}
+		}
+	</script>
 </body>
 </html>
