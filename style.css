@@ -1,10 +1,19 @@
 * {
-	font-family: "Archivo", sans-serif;
+	font-family: "Archivo";
+}
+
+.logo {
+	padding-left: 20%;
+	margin: 5px;
 }
 
 .navbar	{
 	overflow: hidden;
 	background-color: #222931;
+	width: 950px;
+	margin: 0 auto;
+	bottom: -25px;
+	position: relative;
 }
 
 .navbar a {
@@ -31,6 +40,7 @@
 
 .navbar a:hover, .dropdown:hover .dropdownbutton, .dropdownbutton:focus {
 	background-color: #ffe718;
+	color: black;
 }
 
 .dropdown-content {
@@ -50,8 +60,84 @@
 
 .dropdown-content a:hover {
 	background-color: #ffe718;
+	color: black;
 }
 
 .show {
 	display: block;
+}
+
+/*----------------------------------*/
+
+.header {
+	width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	width: 1000px;
+	margin: 0 auto;
+
+}
+
+.grid-item {
+	font-size: 30px;
+	text-align: center;
+}
+
+.nestedgrid-1 {
+	padding: 20px;
+}
+
+.grid-item-2 {
+	font-size: 30px;
+	text-align: center;
+	background-color: #ffe718;
+	height: 130px;
+}
+
+.button {
+	width: 300px;
+	height: 200px;
+	text-decoration: none;
+	border: none;
+	opacity: 1;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+.button-1 {
+	background-image: url(img/banner-1.jpg);
+	color: rgba(0,0,0,0);
+}
+
+.button-2 {
+	background-image: url(img/banner-2.jpg);
+	color: rgba(0,0,0,0);
+}
+
+.button-3 {
+	background-image: url(img/banner-3.jpg);
+	color: rgba(0,0,0,0);
+}
+
+.button-1:hover {
+	text-align:center;
+	color: black;
+	opacity: 0.7;
+}
+
+.button-2:hover {
+	text-align:center;
+	color: black;
+	opacity: 0.7;
+}
+
+.button-3:hover {
+	text-align:center;
+	color: black;
+	opacity: 0.7;
 }
